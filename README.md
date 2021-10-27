@@ -11,6 +11,7 @@
 * Used play-services to get device location
 
 ### Screenshots
+https://github.com/asadsatti/androidchallenge/blob/main/screenshots/screen_weather.png
 
 ### Future Work
 1. Use Navigation Components for navigation
