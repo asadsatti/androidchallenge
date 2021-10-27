@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">WeatherChallenge</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_weather_today">Today</string>
+    <string name="action_weather_seven_day_forecast">7-day Forecast</string>
+
+    <string name="weather_label_pressure">Pressure</string>
+    <string name="weather_label_feels_like_temperature">Feels like</string>
+    <string name="weather_label_humidity">Humidity</string>
+    <string name="weather_label_wind_speed">Wind speed</string>
+    <string name="weather_label_wind_direction">Wind direction</string>
+    <string name="weather_permission_granted">Permission Granted</string>
+    <string name="weather_permission_denied">Permission Denied</string>
+
+    <string name="weather_forecast_temp">%1$2.0f\u00B0</string>
+    <string name="weather_forecast_pressure">%1$d hpa</string>
+    <string name="weather_forecast_wind_speed">%1$2.2f m/s</string>
+    <string name="weather_forecast_wind_direction">%1$d degrees</string>
+    <string name="weather_forecast_humidity">%1$d%%</string>
+
+    <string name="weather_forecast_temp_min">Min %1$2.0f\u00B0</string>
+    <string name="weather_forecast_temp_max">Max %1$2.0f\u00B0</string>
+    <string name="weather_forecast_temp_mor">Mor %1$2.0f\u00B0</string>
+    <string name="weather_forecast_temp_day">Day %1$2.0f\u00B0</string>
+    <string name="weather_forecast_temp_eve">Eve %1$2.0f\u00B0</string>
+    <string name="weather_forecast_temp_nig">Nig %1$2.0f\u00B0</string>
+
+</resources>

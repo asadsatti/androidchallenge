@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_test2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.WeatherFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_weather_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_2x"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_weather_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/space_2x"
+        />
+
+    <TextView
+        android:id="@+id/tv_weather_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/space_2x"
+        app:layout_constraintStart_toStartOf="@+id/gl_weather_left"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="18\u00B0" />
+
+    <TextView
+        android:id="@+id/tv_weather_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gl_weather_top"
+        app:layout_constraintStart_toStartOf="@+id/gl_weather_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weather_temp"
+        tools:text="Clouds" />
+
+    <ImageView
+        android:id="@+id/iv_weather_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_weather_weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_view_day_24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_weather_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="150dp" />
+
+    <TextView
+        android:id="@+id/tv_weather_feels_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/space_2x"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_weather_feels_like_label"
+        app:layout_constraintTop_toTopOf="@id/tv_weather_feels_like_label"
+        app:layout_constraintStart_toStartOf="@+id/gl_weather_left"
+        tools:text="21\u00B0" />
+
+    <TextView
+        android:id="@+id/tv_weather_feels_like_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_2x"
+        app:layout_constraintEnd_toEndOf="@+id/gl_weather_right"
+        app:layout_constraintTop_toBottomOf="@id/gl_weather_top"
+        android:text="@string/weather_label_feels_like_temperature" />
+
+    <TextView
+        android:id="@+id/tv_weather_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/space_2x"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_weather_pressure_label"
+        app:layout_constraintTop_toTopOf="@id/tv_weather_pressure_label"
+        app:layout_constraintStart_toStartOf="@+id/gl_weather_left"
+        tools:text="1031 hpa" />
+
+    <TextView
+        android:id="@+id/tv_weather_pressure_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_2x"
+        app:layout_constraintEnd_toEndOf="@+id/gl_weather_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_weather_feels_like_label"
+        android:text="@string/weather_label_pressure" />
+
+    <TextView
+        android:id="@+id/tv_weather_wind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/space_2x"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_weather_wind_speed_label"
+        app:layout_constraintTop_toTopOf="@id/tv_weather_wind_speed_label"
+        app:layout_constraintStart_toStartOf="@+id/gl_weather_left"
+        tools:text="1 m/s" />
+
+    <TextView
+        android:id="@+id/tv_weather_wind_speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_2x"
+        app:layout_constraintEnd_toEndOf="@+id/gl_weather_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_weather_pressure_label"
+        android:text="@string/weather_label_wind_speed" />
+
+    <TextView
+        android:id="@+id/tv_weather_wind_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/space_2x"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_weather_wind_direction_label"
+        app:layout_constraintTop_toTopOf="@id/tv_weather_wind_direction_label"
+        app:layout_constraintStart_toStartOf="@+id/gl_weather_left"
+        tools:text="1 degrees" />
+
+    <TextView
+        android:id="@+id/tv_weather_wind_direction_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_2x"
+        app:layout_constraintEnd_toEndOf="@+id/gl_weather_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_weather_wind_speed_label"
+        android:text="@string/weather_label_wind_direction" />
+
+    <TextView
+        android:id="@+id/tv_weather_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/space_2x"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_weather_humidity_label"
+        app:layout_constraintTop_toTopOf="@id/tv_weather_humidity_label"
+        app:layout_constraintStart_toStartOf="@+id/gl_weather_left"
+        tools:text="63 %" />
+
+    <TextView
+        android:id="@+id/tv_weather_humidity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_2x"
+        app:layout_constraintEnd_toEndOf="@+id/gl_weather_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_weather_wind_direction_label"
+        android:text="@string/weather_label_humidity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
