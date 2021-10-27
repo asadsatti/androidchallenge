@@ -10,7 +10,7 @@
 * Used OkHttpClient as HTTP client for Retrofits
 * Used play-services to get device location
 
-Future Work
+### Future Work
 1. Use Navigation Components for navigation
 2. Use complete Clean Architecture to make code testable as below:
   * ViewModel should be injected with UseCase that are used to request the weather data
