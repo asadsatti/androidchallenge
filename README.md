@@ -12,6 +12,7 @@
 
 ### Screenshots
 https://github.com/asadsatti/androidchallenge/blob/main/screenshots/screen_weather.png
+https://github.com/asadsatti/androidchallenge/blob/main/screenshots/screen_forecast.png
 
 ### Future Work
 1. Use Navigation Components for navigation
